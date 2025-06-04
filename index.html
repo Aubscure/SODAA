@@ -5,39 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download APK</title>
     <style>
+        /* Minimalist CSS */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --light-gray: #f8f9fa;
+            --border-radius: 4px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
             padding: 20px;
         }
+        
         .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: inline-block;
+            background: var(--background-color);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
         }
+        
+        h1 {
+            color: var(--primary-color);
+            font-weight: 300;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+        
         .download-btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #28a745;
+            padding: 0.8rem 2rem;
+            background-color: var(--secondary-color);
             color: white;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
+            font-size: 1rem;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
+        
         .download-btn:hover {
-            background-color: #218838;
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Minimalist divider */
+        .divider {
+            height: 1px;
+            background-color: #eee;
+            margin: 1.5rem 0;
+        }
+        
+        /* Additional minimalist touches */
+        .version {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Download My APK</h1>
-        <p>Click the button below to download the APK file.</p>
-        <a href="https://www.mediafire.com/file/16n55qp1ennapwk/sodaa%25282%2529.apk/file" class="download-btn" download>Download APK</a>
+        <h1>Download APK</h1>
+        <p>Get the latest version of our application</p>
+        
+        <div class="divider"></div>
+        
+        <a href="https://drive.google.com/uc?export=download&id=1UuJDSU3QhxNvQkViZ3coomYGEamhPUSO" class="download-btn" download>
+            Download Now
+        </a>
+        
+        <div class="version">Version 1.0.0</div>
     </div>
 </body>
 </html>
